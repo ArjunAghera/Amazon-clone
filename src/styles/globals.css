@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .link {
+    @apply cursor-pointer hover:underline;
+  }
+  .button {
+    @apply bg-yellow-300  p-1 px-10 cursor-pointer rounded-full hover:bg-yellow-400 mt-2;
+  }
+  .button-sm {
+    @apply bg-yellow-300 h-8 w-8 p-1 text-center cursor-pointer rounded-full hover:bg-yellow-400 mt-2;
+  }
+  .button2 {
+    @apply bg-yellow-400 p-1 px-10 cursor-pointer rounded-full hover:bg-yellow-500 mt-4;
+  }
+  .button-disabled {
+    @apply bg-gray-600 p-1 px-12 cursor-pointer rounded-full hover:bg-gray-500 text-gray-100 mt-4;
+  }
+}
