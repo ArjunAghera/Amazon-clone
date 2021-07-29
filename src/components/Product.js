@@ -60,7 +60,6 @@ function Product({ id, title, price, category, description, image }) {
       <button onClick={addItemToCart} className=" button">
         Add to Cart
       </button>
-      <button className=" button2">Buy Now!</button>
     </div>
   );
 }
