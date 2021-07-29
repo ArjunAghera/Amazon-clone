@@ -8,7 +8,8 @@ import { groupBy } from "lodash";
 import { loadStripe } from "@stripe/stripe-js";
 import axios from "axios";
 
-const stripePromise = loadStripe(process.env.stripe_public_key);
+const publicKey = process.env.stripe_public_key.toString();
+const stripePromise = loadStripe(publicKey);
 
 function checkout() {
   const [session] = useSession();
