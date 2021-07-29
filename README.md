@@ -1,0 +1,1 @@
+Made this amazon clone using NEXT.js for frontend. Carried out authentication using next-auth. Fetched products using fakestoreapi. Integrated payment gateway using stripe and stored all the orders using webhooks in firestore cloud database.
