@@ -9,10 +9,8 @@ function Order({ id, amount, amountShipping, images, timestamp, items }) {
     groupedImages = Object.values(
       groupBy(images.map((image) => path.basename(image)))
     ).map((group) => [group.length, group[0]]);
-    console.log(1, groupedImages);
   } else {
     groupedImages = [...images.map((image) => JSON.parse(image))];
-    console.log(2, groupedImages);
   }
 
   return (
