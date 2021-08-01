@@ -17,7 +17,6 @@ function checkout() {
   const total = useSelector(selectTotal);
 
   const groupedItems = Object.values(groupBy(items, "id"));
-  console.log(groupedItems);
 
   const createCheckoutSession = async () => {
     const stripe = await stripePromise;

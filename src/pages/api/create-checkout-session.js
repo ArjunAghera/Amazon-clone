@@ -34,6 +34,8 @@ export default async (req, res) => {
     ]
 */
 
+  const url = process.env.HOST;
+
   const session = await stripe.checkout.sessions.create({
     payment_method_types: ["card"],
     shipping_rates: ["shr_1J7h66SDRgIETPNYriCADm8T"],
@@ -42,8 +44,8 @@ export default async (req, res) => {
     },
     line_items: transformedItems,
     mode: "payment",
-    success_url: `${process.env.HOST}/success`,
-    cancel_url: `${process.env.HOST}/checkout`,
+    success_url: `${url}/success`,
+    cancel_url: `${url}/checkout`,
 
     metadata: {
       email,
