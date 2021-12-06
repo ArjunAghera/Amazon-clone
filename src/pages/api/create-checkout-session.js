@@ -45,9 +45,9 @@ export default async (req, res) => {
     line_items: transformedItems,
     mode: "payment",
     success_url:
-      "https://amazon-clone-e3cv0atku-arjunaghera.vercel.app/success",
+      "https://amazon-clone-e3cv0atku-arjunaghera.vercel.app/checkout/success",
     cancel_url:
-      "https://amazon-clone-e3cv0atku-arjunaghera.vercel.app/checkout",
+      "https://amazon-clone-e3cv0atku-arjunaghera.vercel.app/checkout/cancle",
 
     metadata: {
       email,
